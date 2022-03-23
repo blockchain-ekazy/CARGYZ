@@ -5,7 +5,7 @@ import Img2 from "./Imgs/2.jpg";
 import Img3 from "./Imgs/3.jpg";
 import Img4 from "./Imgs/4.jpg";
 import Img5 from "./Imgs/5.webp";
-import Img6 from "./Imgs/6.png";
+import Img6 from "./Imgs/6.jpeg";
 import bg1 from "./Imgs/bg1.gif";
 import Mintbtn from "./mintbtn";
 import os from "./Imgs/os.png";
@@ -18,7 +18,7 @@ export default function Home() {
           <nav class="navbar container navbar-expand-lg navbar-dark navv">
             <div class="container-fluid">
               <a class="navbar-brand d-block " href="#">
-              <img className="imghead_1 rounded" src={Img4}></img>
+                <img className="imghead_1 rounded" src={Img4}></img>
               </a>
               <button
                 class="navbar-toggler"
@@ -55,21 +55,25 @@ export default function Home() {
                 <form class="d-flex btnns">
                   <div class="social-buttons text-center">
                     <span class="neo-button px-2">
-                      <a href="https://discord.gg/cashcrabs" target="_blank">
+                      <a
+                        href="https://discord.gg/kz6QMBVdA4
+"
+                        target="_blank"
+                      >
                         <i class="buttons fab fa-discord  text-white"></i>
                       </a>
                     </span>
                     <span class="neo-button px-2">
                       <a
-                        href="https://twitter.com/CashCrabsNFT"
+                        href="https://twitter.com/MutantMetaverse"
                         target="_blank"
                       >
-                        <i class="fa fa-twitter "></i>
+                        <i class="fab fa-twitter "></i>
                       </a>
                     </span>
                     <span class="neo-button px-2">
                       <a
-                        href="https://opensea.io/collection/cash-crabs"
+                        href="https://opensea.io/Mutantmetaverse/"
                         target="_blank"
                       >
                         <img
@@ -95,11 +99,11 @@ export default function Home() {
               {/* <h1 className=" centered text-white h1">Cash <span className='Tclr'>Crabs</span></h1> */}
               <h2 className="text-white">
                 Whitelist launch date:{" "}
-                <span className="  Tclr">9th February 4pm GMT (11am EST)</span>{" "}
+                <span className="  Tclr">MARCH 29th 2022 (11PM EST)</span>{" "}
               </h2>
               <h4 className="text-white">
                 Public launch date:{" "}
-                <span className="  Tclr">10th February 9pm GMT (4pm EST)</span>
+                <span className="  Tclr">MARCH 31th 2022 (11PM EST)</span>
               </h4>
             </div>
             <div className="text-center ">
@@ -120,11 +124,18 @@ export default function Home() {
             {/* <div className="col-12 col-md-1 "></div> */}
             <div className="col-12 col-md-7 ">
               <h2 className=" text-white ">
-                 <span className="  Tclr"> WELCOME </span>
+                <span className="  Tclr"> WELCOME </span>
                 To CARGYZ{" "}
               </h2>
               <p className="text-white">
-              Introducing CARGYZ, a lighthearted celebration of the people that make the auto industry possible, uniquely portrayed in non-fungible tokens (NFT's). Everyday, millions of people around the world get up and go to work making our transportation needs possible. Little thought goes into the countless workers needed to make the auto industry function. The events of the last couple of years have really shown the true value of these tireless champions of the chariot. 
+                Introducing CARGYZ, a lighthearted celebration of the people
+                that make the auto industry possible, uniquely portrayed in
+                non-fungible tokens (NFT's). Everyday, millions of people around
+                the world get up and go to work making our transportation needs
+                possible. Little thought goes into the countless workers needed
+                to make the auto industry function. The events of the last
+                couple of years have really shown the true value of these
+                tireless champions of the chariot.
               </p>
               <br />
             </div>
@@ -219,8 +230,75 @@ export default function Home() {
           <div className="row">
             <div className="col-md-12">
               <p className="text-white">
-                It takes many hands to make our dream car possible, CARGYZ highlights the people that make it all possible. Rather then start at the beginning of the process, the first series starts at the end, the Dealership. Our 10,000 piece Series 1 collection will highlight the last link in a long chain of heroes. Most folks would not refer to car salespeople as heroes, in fact they would be more likely to use the opposite term, villain. Having spent over 25 years in the car business, I can tell you without hesitation there are many heroes amongst them. Unlike most jobs that allowed you to stay home during the pandemic and work, there’s no way to take a customer around the lot from your living room. No way to test drive from your home office. And no way to touch, feel and smell that new car from the kitchen table. You had to be there, right in the middle of all of it, with only your disposable mask for protection.<br></br><br></br> Selling cars requires a commitment that few people could ever make. You rise up in the morning with no assurance that your days labor will yield any result. You wait patiently with your fellow salespeople for an opportunity to speak to a potential customer, never knowing when that encounter will happen. You can spend all day waiting, never getting a chance or perhaps just giving directions to the parts department. Sometimes your shift could end at 6pm, but if a customer rolls in at 5:45, you'll be there till 10pm. Most people want a car, so if they can buy one they usually will. I've often felt that you don't get paid to sell cars, you get paid to wait around to sell a car. Many enter the business seeking their fortunes not prepared for the mental challenges of time and rejection. The ones who navigate these slings and arrows are highlighted in the first series, "The Sales Department".<br></br><br></br> Let's explore some of our endearing characters, whimsically illustrated by Italian artist and illustrator Mattia Tanieli. You can't have a Dealership without the "Owner". The owner is a special person, they have to keep the entire team pulling in one direction, up! Their title will be the rarest of the group, and should command much respect. The owner needs a right hand person to carry out the day to day supervision and success of the store, the General Manager handles that task. Not many weather the storm of sales long enough to reach that level, the GM is usually looking for their chance to own a store. The remaining Management spots go to Sales and Finance, it's hard to buy a car at a dealership and not meet these people. One handles the figures to buy the car and the other works on your bank loan or takes your cash. These managers typically work the longest hours in the store and endure the ups and downs that come with retail sales.<br></br><br></br> The rest of the collection is dedicated to the salespeople, the backbone of the Dealership. Without them, no one would be there to help us navigate the selection and buying process. No one to demonstrate the features and benefits, and no one to test drive and see if it's the right fit for you. Next time you go to a lot and look at cars remember, theres a hero waiting to assist you.
+                It takes many hands to make our dream car possible, CARGYZ
+                highlights the people that make it all possible. Rather then
+                start at the beginning of the process, the first series starts
+                at the end, the Dealership. Our 10,000 piece Series 1 collection
+                will highlight the last link in a long chain of heroes. Most
+                folks would not refer to car salespeople as heroes, in fact they
+                would be more likely to use the opposite term, villain. Having
+                spent over 25 years in the car business, I can tell you without
+                hesitation there are many heroes amongst them. Unlike most jobs
+                that allowed you to stay home during the pandemic and work,
+                there’s no way to take a customer around the lot from your
+                living room. No way to test drive from your home office. And no
+                way to touch, feel and smell that new car from the kitchen
+                table. You had to be there, right in the middle of all of it,
+                with only your disposable mask for protection.<br></br>
+                <br></br> Selling cars requires a commitment that few people
+                could ever make. You rise up in the morning with no assurance
+                that your days labor will yield any result. You wait patiently
+                with your fellow salespeople for an opportunity to speak to a
+                potential customer, never knowing when that encounter will
+                happen. You can spend all day waiting, never getting a chance or
+                perhaps just giving directions to the parts department.
+                Sometimes your shift could end at 6pm, but if a customer rolls
+                in at 5:45, you'll be there till 10pm. Most people want a car,
+                so if they can buy one they usually will. I've often felt that
+                you don't get paid to sell cars, you get paid to wait around to
+                sell a car. Many enter the business seeking their fortunes not
+                prepared for the mental challenges of time and rejection. The
+                ones who navigate these slings and arrows are highlighted in the
+                first series, "The Sales Department".<br></br>
+                <br></br> Let's explore some of our endearing characters,
+                whimsically illustrated by Italian artist and illustrator Mattia
+                Tanieli. You can't have a Dealership without the "Owner". The
+                owner is a special person, they have to keep the entire team
+                pulling in one direction, up! Their title will be the rarest of
+                the group, and should command much respect. The owner needs a
+                right hand person to carry out the day to day supervision and
+                success of the store, the General Manager handles that task. Not
+                many weather the storm of sales long enough to reach that level,
+                the GM is usually looking for their chance to own a store. The
+                remaining Management spots go to Sales and Finance, it's hard to
+                buy a car at a dealership and not meet these people. One handles
+                the figures to buy the car and the other works on your bank loan
+                or takes your cash. These managers typically work the longest
+                hours in the store and endure the ups and downs that come with
+                retail sales.<br></br>
+                <br></br> The rest of the collection is dedicated to the
+                salespeople, the backbone of the Dealership. Without them, no
+                one would be there to help us navigate the selection and buying
+                process. No one to demonstrate the features and benefits, and no
+                one to test drive and see if it's the right fit for you. Next
+                time you go to a lot and look at cars remember, theres a hero
+                waiting to assist you.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-32aqIezT1w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -228,11 +306,13 @@ export default function Home() {
         <a id="Rd"></a>
 
         <div class="container">
-          <h1 className="h1 text-white text-center">ROADMAP</h1>
+          <h1 className="h1 text-white text-center mt-5">ROADMAP</h1>
           <br />
           <br />
           <h3 className="text-white text-center">
-            <span className="  Tclr">So where are we going on these projects🤔</span>
+            <span className="  Tclr">
+              So where are we going on these projects🤔
+            </span>
           </h3>
           <br />
           <br />
@@ -249,9 +329,12 @@ export default function Home() {
                 </div>
               </div>
               <div class="timeline-content">
-                
                 <p class="description text-white">
-                It’s a long journey with many facets yet to come. The primary goal of Series 1 is to give us a foothold in the Metaverse ♾. We can’t have a community without a place to go. To achieve that goal we want to acquire parcels in several virtual worlds after the collection sells out.
+                  It’s a long journey with many facets yet to come. The primary
+                  goal of Series 1 is to give us a foothold in the Metaverse ♾.
+                  We can’t have a community without a place to go. To achieve
+                  that goal we want to acquire parcels in several virtual worlds
+                  after the collection sells out.
                 </p>
               </div>
             </div>
@@ -268,9 +351,12 @@ export default function Home() {
                 </div>
               </div>
               <div class="timeline-content">
-                
                 <p class="description text-white">
-                The second phase will involve construction 🏗 🚧  of CARGYZ community gathering spaces. The auto industry can be tough, it would be nice to hop into VR and have a place to go. CARGYZ goal is to be that place, where all chariot champions can go to rest their wheels. 😴🚙🚗🛻🚌
+                  The second phase will involve construction 🏗 🚧 of CARGYZ
+                  community gathering spaces. The auto industry can be tough, it
+                  would be nice to hop into VR and have a place to go. CARGYZ
+                  goal is to be that place, where all chariot champions can go
+                  to rest their wheels. 😴🚙🚗🛻🚌
                 </p>
               </div>
             </div>
@@ -287,12 +373,12 @@ export default function Home() {
                 </div>
               </div>
               <div class="timeline-content">
-                
                 <p class="description text-white">
-                As we transition into Series 2, the CARGYZ benevolence and beyond initiatives can begin. These steps will be outlined on a future date.
+                  As we transition into Series 2, the CARGYZ benevolence and
+                  beyond initiatives can begin. These steps will be outlined on
+                  a future date.
                 </p>
               </div>
-             
             </div>
             <div class="timeline">
               <div class="icon"></div>
@@ -304,21 +390,13 @@ export default function Home() {
                 </div>
               </div>
               <div class="timeline-content">
-                
                 <p class="description text-white">
-                There are many ways CARGYZ plans to meld into the Metaverse. We are only just beginning the journey, come ride with us. 🚀
+                  There are many ways CARGYZ plans to meld into the Metaverse.
+                  We are only just beginning the journey, come ride with us. 🚀
                 </p>
               </div>
-             
             </div>
           </div>
-
-          
-
-         
-         
-
-          
         </div>
 
         {/* 
@@ -417,39 +495,37 @@ export default function Home() {
             Meet The <span className="  Tclr">Team</span>
           </h2>
           <div className="row">
-            <div className="col-12 col-md-4 py-3">
+            <div className="col-12 col-md-3 py-3">
               <div className=" w-100 ">
                 <img
                   className="d-block w-100 rounded  "
                   src={Img1}
                   alt="First slide"
                 ></img>
-                <h3 className="text-white text-center pt-3">
-                  King Crab | Reubs
-                </h3>
+                <h3 className="text-white text-center pt-3">BK3 | Owner</h3>
                 <p className="text-white text-center pt-3">
-                  Project Manager/communication
+                  Project Creator/Manager{" "}
                 </p>
               </div>
             </div>
 
-            <div className="col-12 col-md-4 py-3">
+            <div className="col-12 col-md-3 py-3">
               <div className=" w-100">
                 <img
-                  className="d-block w-100 rounded "
-                  src={Img2}
+                  className="lop d-block w-100  rounded"
+                  src={Img6}
                   alt="First slide"
                 ></img>
                 <h3 className="text-white text-center pt-3">
-                  Top Crab | Clawds
+                  Chicky | General Manager
                 </h3>
                 <p className="text-white text-center pt-3">
-                  Project Creator/community Planner
+                  Community Development/Planning
                 </p>
               </div>
             </div>
 
-            <div className="col-12 col-md-4 py-3">
+            <div className="col-12 col-md-3 py-3">
               <div className=" w-100">
                 <img
                   className="d-block w-100 rounded "
@@ -457,49 +533,19 @@ export default function Home() {
                   alt="First slide"
                 ></img>
                 <h3 className="text-white text-center pt-3">
-                  Quiet Crab | Mooms
+                  Mattia Tanieli | Creative Manager
                 </h3>
                 <p className="text-white text-center pt-3">
-                  Strategy and<br></br>Development
+                  Illustrator/Artist{" "}
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="container  py-5 teamimgs">
-          {/* <h2 className='h1 text-white text-center pb-2 pt-5' >Meet The Team</h2> */}
-          <div className="row">
-            <div className="col-12 col-md-4 py-3">
-              <div className=" w-100 ">
-                <img
-                  className="d-block w-100 rounded "
-                  src={Img3}
-                  alt="First slide"
-                ></img>
-                <h3 className="text-white text-center pt-3">Damien3d5</h3>
-                <p className="text-white text-center pt-3">Artist</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-4 py-3">
-              <div className=" w-100">
-                <img
-                  className="d-block w-100 rounded"
-                  src={Img2}
-                  alt="First slide"
-                ></img>
-                <h3 className="text-white text-center pt-3">Abhishek Thory</h3>
-                <p className="text-white text-center pt-3">
-                  Blockchain Developer
-                </p>
-              </div>
-            </div>
-            <div className="col-12 col-md-4 py-3">
-              <a href="https://www.fiverr.com/share/vzY2RA">
+            <div className="col-12 col-md-3 py-3">
+              <a href="https://www.linkedin.com/in/sabirpro/">
                 <div className="w-100">
                   <img
                     className="d-block w-100 rounded"
-                    src={Img1}
+                    src={Img2}
                     alt="First slide"
                   ></img>
                   <h3 className="text-white text-center pt-3">Sabirpro</h3>
@@ -508,6 +554,10 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="container  py-5 teamimgs">
+          {/* <h2 className='h1 text-white text-center pb-2 pt-5' >Meet The Team</h2> */}
+          <div className="row"></div>
         </div>
 
         <div class="container">
@@ -533,7 +583,7 @@ export default function Home() {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        why mint a cash crab?
+                        WHY MINT A CARGYZ
                       </a>
                     </h4>
                   </div>
@@ -545,11 +595,9 @@ export default function Home() {
                   >
                     <div class="panel-body ">
                       <p>
-                        Owning a cash crab NFT will mean being part a project
-                        with a clear path and vision. Not to be confused with a
-                        cash grab, this team cares about its community and
-                        supports its members. Please check out our Roadmap for
-                        more details!{" "}
+                        Minting a CARGYZ brings a new hero into the NFT world.
+                        It also brings us another step closer to making the
+                        CARGYZ Metaverse a reality.
                       </p>
                     </div>
                   </div>
@@ -566,7 +614,7 @@ export default function Home() {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        What is the total mint supply of cash crabs ?
+                        HOW MANY CARGYZ IN SERIES 1
                       </a>
                     </h4>
                   </div>
@@ -577,7 +625,7 @@ export default function Home() {
                     aria-labelledby="headingTwo"
                   >
                     <div class="panel-body">
-                      <p>There will be 10,000 unique cash crab NFTs. </p>
+                      <p>There will be a total of 10,000 CARGYZ in Series 1 </p>
                     </div>
                   </div>
                 </div>
@@ -593,7 +641,7 @@ export default function Home() {
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        How Much will is cost to mint a cash crab ?
+                        HOW MUCH IS ONE CARGYZ TO MINT
                       </a>
                     </h4>
                   </div>
@@ -604,11 +652,7 @@ export default function Home() {
                     aria-labelledby="headingThree"
                   >
                     <div class="panel-body">
-                      <p>
-                        Each Cash Crab will cost 0.025 ETH + Gas.We will be
-                        using a ERC721A ‘Azuki’ inspired contract. This means
-                        gas costs should be significantly lower during mint.
-                      </p>
+                      <p>Each CARGYZ will be 0.1 ETH. + GAS.</p>
                     </div>
                   </div>
                 </div>
@@ -624,7 +668,7 @@ export default function Home() {
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        When will Cash Crabs launch ?
+                        HOW CAN I GET ON THE WHITELIST?
                       </a>
                     </h4>
                   </div>
@@ -636,9 +680,8 @@ export default function Home() {
                   >
                     <div class="panel-body">
                       <p>
-                        Pre-Sale will be Wednesday 9th February from 4pm GMT
-                        (11am EST). Public sale will be Thursday 10th February
-                        9pm GMT (4pm EST).
+                        Preregistration is live and will end on 3.3.22 @ 11 pm
+                        EST.
                       </p>
                     </div>
                   </div>
@@ -654,8 +697,7 @@ export default function Home() {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        How many white list spots are available and who is
-                        eligible?
+                        WHEN DOES THE CARGYZ MINT GO LIVE
                       </a>
                     </h4>
                   </div>
@@ -667,9 +709,8 @@ export default function Home() {
                   >
                     <div class="panel-body ">
                       <p>
-                        There are 750 whitelist spots. Whitelist has been given
-                        out to the community over the last few weeks with a few
-                        more spots still up for grabs. The mint price is 0.025.
+                        Whitelisted addresses can begin minting on 3.3.22 @ 11
+                        pm EST. Public minting will begin on 3.5.22 @ 11 pm EST.
                       </p>
                     </div>
                   </div>
@@ -685,7 +726,7 @@ export default function Home() {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        How many Cash Crabs can I mint ?
+                        IS THERE A LIMIT TO HOW MANY CARGYZ I CAN MINT
                       </a>
                     </h4>
                   </div>
@@ -696,11 +737,7 @@ export default function Home() {
                     aria-labelledby="headingFive"
                   >
                     <div class="panel-body ">
-                      <p>
-                        You will be able to mint 5 crabs per wallet during the
-                        white list sale. During general mint there will be a 10
-                        crab limit per transaction.{" "}
-                      </p>
+                      <p>There is a minting limit of 40 CARGYZ per wallet</p>
                     </div>
                   </div>
                 </div>
@@ -712,16 +749,18 @@ export default function Home() {
         <hr className="text-white"></hr>
         <div className="container text-center py-2 text-white  ">
           <p>
-            <a href=" https://discord.gg/cashcrabs">
+            <a href="https://discord.gg/kz6QMBVdA4" target="_blank">
               <i className="fab fa-discord Footer px-1"></i>
             </a>
-            <a href="https://twitter.com/CashCrabsNFT">
+            <a href="https://twitter.com/MutantMetaverse">
               <i className=" px-1 Footer fab fa-twitter"></i>
             </a>
-            <a href="https://opensea.io/collection/cash-crabs">
+            <a href="https://opensea.io/Mutantmetaverse">
               <img src={os} className="px-1" style={{ width: "25px" }} />
             </a>
-            <span className="px-1 Footer">© 2022, CASH CRABS</span>
+            <span className="px-1 Footer">
+              © 2022, <a href="/Privacy">PRIVACY POLICY</a>
+            </span>
           </p>
           <p></p>
         </div>

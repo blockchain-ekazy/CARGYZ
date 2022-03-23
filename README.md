@@ -1,4 +1,3 @@
-![CARGYZ](https://user-images.githubusercontent.com/100062048/155753688-9d52e807-b567-4a36-88c2-81bdbcbd1576.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

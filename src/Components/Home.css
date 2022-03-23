@@ -53,7 +53,7 @@
   font-size: 18px;
 }
 .neo-button:hover i {
-  color: #eb1c24 !important;
+  color: #e1c721 !important;
 }
 .navbgo {
 }
@@ -139,8 +139,16 @@ p {
   color: #fff;
 }
 .Footer:hover {
-  color: #eb1c24;
+  color: #ccb41e;
   cursor: pointer;
+
+}
+a{
+  color:white;
+
+}
+a:hover{
+color: #ccb41e;
 }
 
 .border {
@@ -561,4 +569,17 @@ script + iframe {
 .imghead_1{
   max-width: 100%;
   width: 100PX;
+}
+.lop{
+  height: 255px;
+}
+/* @media only screen and (max-width: 200px) {
+  .lop{
+    height: 10px !important;
+  }
+} */
+@media screen and (min-device-height : 320px) and (max-device-height : 480px) {
+  .lop{
+    height: 150px !important;
+  }
 }
