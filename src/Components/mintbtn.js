@@ -4,10 +4,10 @@ import Web3 from "web3";
 import detectEthereumProvider from "@metamask/detect-provider";
 require("dotenv").config();
 
-const REACT_APP_CONTRACT_ADDRESS = "0x8Dd24d6B391576624bc82B5Ef04Cb3B68e4Df6A3";
+const REACT_APP_CONTRACT_ADDRESS = "0x4E727d7c1e627c19d7355496DC8ae896859bA9D5";
 const SELECTEDNETWORK = "1";
 const SELECTEDNETWORKNAME = "Ethereum Mainnet";
-const nftquantity = 500;
+const nftquantity = 10000;
 
 function Mintbtn() {
   const [errormsg, setErrorMsg] = useState(false);
@@ -15,6 +15,8 @@ function Mintbtn() {
   const [totalSupply, settotalSupply] = useState(0);
   const [walletConnected, setWalletConnected] = useState(0);
   const [whitelistedUser, setWhitelistedUser] = useState(0);
+  const [userAddress, setUserAddress] = useState("");
+  const [maxallowed, setmaxallowed] = useState("0");
 
   useEffect(async () => {
     if (await detectEthereumProvider()) {
@@ -83,10 +85,20 @@ function Mintbtn() {
           return;
         }
 
-        let price = 25 * 10 ** 15; //await ct.methods.getPrice().call();
-        await ct.methods
-          .mint(quantity)
-          .send({ from: metaMaskAccount, value: price * quantity });
+        let price = await ct.methods.getPrice().call(); //await ct.methods.getPrice().call();
+
+        let alreadyMinted = await ct.methods.balanceOf(metaMaskAccount).call();
+        let maxa = await ct.methods.MAX_PER_Address().call();
+
+        if (Number(alreadyMinted) + Number(quantity) <= maxa) {
+          await ct.methods.mint(quantity).send({
+            from: metaMaskAccount,
+            value: price * quantity,
+          });
+        } else {
+          setErrorMsg("Already Minted Max");
+        }
+
         settotalSupply(await ct.methods.totalSupply().call());
         setQuantity(1);
       } else {
@@ -124,96 +136,108 @@ function Mintbtn() {
         let metaMaskAccount = await web3.eth.getAccounts();
         metaMaskAccount = metaMaskAccount[0];
 
-        let statusone = await ct.methods.getStatus().call();
+        const WAddress = metaMaskAccount;
+        metaMaskAccount =
+          metaMaskAccount.substring(0, 15) +
+          "........" +
+          metaMaskAccount.substring(
+            metaMaskAccount.length - 10,
+            metaMaskAccount.length
+          );
 
-        if (statusone == 2 || statusone == 1) {
-          setWalletConnected(1);
-          if (statusone == 1) {
-            let wl = await ct.methods.isWhitelisted(metaMaskAccount).call();
-            console.log(wl);
-            if (wl) setWhitelistedUser(1);
-            else setWhitelistedUser(2);
-          } else if (statusone == 2) setWhitelistedUser(1);
-        } else {
-          setWalletConnected(2);
+        setUserAddress(metaMaskAccount);
+
+        // check status
+        // if 1 check for whitelist
+        // if 2 allow mint
+        // if 0 error
+        const Status = await ct.methods.getStatus().call();
+        // const whitelist =await ct.methods.isWhitelisted(WAddress).call() ;
+
+        // console.log(whitelist)
+        if (Status == 0) {
+          setErrorMsg("Sale Not started");
         }
+        //  else if (Status == 1) {
+        //   console.log(setUserAddress)
+        //    if ( whitelist) {
+        //     setWalletConnected(1);
+        //     // console.log("okok")
+        //    } else {
+        //     setErrorMsg("You Are Not Whitelisted")
+        //    }
+        // }
+        else if (Status == 2) {
+          //  <Mintbtn/>
+          setWalletConnected(1);
+        }
+
+        let maxa = await ct.methods.MAX_PER_Address().call();
+        setmaxallowed(maxa);
       }
     }
   }
 
   return (
-    <div className="BtnDiv">
+    <div className="BtnDiv ">
+      {/* <h6 className="text-center">{userAddress}</h6> */}
       {!errormsg ? (
         <div className="row align-items-center">
           {walletConnected == 0 ? (
             <div className="col-12">
-              <button
+              <h3
                 onClick={() => {
                   connectWallet();
                 }}
-                className="connectbtn btn text-white d-block w-100"
+                className="text-white text-center d-block w-100"
+                style={{ cursor: "pointer" }}
               >
-                Connect Wallet
-              </button>
+                Mint
+              </h3>
             </div>
           ) : (
             ""
           )}
           {walletConnected == 1 ? (
             <>
-              {whitelistedUser == 1 ? (
-                <>
-                  <div className="col-sm-5">
-                    <div className="d-flex justify-content-center align-items-center">
-                      <button
-                        className="count btn mx-3 "
-                        onClick={() => setQuantity(quantity - 1)}
-                        disabled={quantity == 1}
-                      >
-                        {" "}
-                        -{" "}
-                      </button>
-                      <span className="quantity"> {quantity} </span>
-                      <button
-                        className="count btn mx-3 "
-                        onClick={() => setQuantity(quantity + 1)}
-                        disabled={quantity == 5}
-                      >
-                        {" "}
-                        +{" "}
-                      </button>
-                    </div>
-                  </div>
-                  <div className="col-sm-7 pt-3 pt-sm-0">
-                    <button
-                      type="button"
-                      className="connectbtn btn text-white d-block w-100"
-                      onClick={() => loadWeb3()}
-                    >
-                      Mint A Crab
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <h4 className="text-center text-white teamname w-100">
-                  Not Whitelisted, Please wait for public sale
+              <div className="col-sm-5">
+                <div className="d-flex justify-content-center align-items-center">
+                  <button
+                    className="count btn mx-4 "
+                    onClick={() => setQuantity(quantity - 1)}
+                    disabled={quantity == 1}
+                  >
+                    {" "}
+                    -{" "}
+                  </button>
+                  <span className="quantity text-dark"> {quantity} </span>
+                  <button
+                    className="count btn mx-3 "
+                    onClick={() => setQuantity(quantity + 1)}
+                    disabled={quantity == maxallowed}
+                  >
+                    {" "}
+                    +{" "}
+                  </button>
+                </div>
+              </div>
+              <div className="col-sm-7 pt-3 pt-sm-0">
+                <h4
+                  type="button"
+                  className="connectbtn btn text-white d-block text-center"
+                  onClick={() => loadWeb3()}
+                >
+                  Mint
                 </h4>
-              )}
+              </div>
             </>
-          ) : (
-            ""
-          )}
-          {walletConnected == 2 ? (
-            <h6 className="text-center text-white teamname w-100">
-              Sale Ended
-            </h6>
           ) : (
             ""
           )}
           {/* <p className="mt-3 text-white mx-auto mb-0 text-center">{nftquantity-totalSupply}/{nftquantity} Available</p> */}
         </div>
       ) : (
-        <h5 className="mt-2 supplytext">
+        <h5 className="mt-2 supplytext text-center">
           <b>{errormsg}</b>
         </h5>
       )}

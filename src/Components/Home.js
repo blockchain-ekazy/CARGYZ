@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.css";
-import Img1 from "./Imgs/1.jpg";
-import Img2 from "./Imgs/2.jpg";
-import Img3 from "./Imgs/3.jpg";
+import Img1 from "./Imgs/412CA1F2-D7EB-4770-85BB-7D2828ED8841.jpeg";
+import Img2 from "./Imgs/4838DDAE-CE9A-438B-A820-1B30EDA6D826.jpeg";
+import Img3 from "./Imgs/40594CDC-D830-4429-A6B0-E7A9401C6B91.jpeg";
 import Img4 from "./Imgs/4.jpg";
 import Img5 from "./Imgs/5.webp";
-import Img6 from "./Imgs/6.jpeg";
+import Img6 from "./Imgs/6.jpg";
 import bg1 from "./Imgs/bg1.gif";
 import Mintbtn from "./mintbtn";
 import os from "./Imgs/os.png";
@@ -73,7 +73,7 @@ export default function Home() {
                     </span>
                     <span class="neo-button px-2">
                       <a
-                        href="https://opensea.io/Mutantmetaverse/"
+                        href="https://opensea.io/collection/cargyz"
                         target="_blank"
                       >
                         <img
@@ -98,7 +98,7 @@ export default function Home() {
               <br />
               {/* <h1 className=" centered text-white h1">Cash <span className='Tclr'>Crabs</span></h1> */}
               <h2 className="text-white">
-                Whitelist launch date:{" "}
+                Pre-sale launch date:{" "}
                 <span className="  Tclr">MARCH 29th 2022 (11PM EST)</span>{" "}
               </h2>
               <h4 className="text-white">
@@ -652,7 +652,11 @@ export default function Home() {
                     aria-labelledby="headingThree"
                   >
                     <div class="panel-body">
-                      <p>Each CARGYZ will be 0.1 ETH. + GAS.</p>
+                      <p>
+                        Each CARGYZ minted will be .07 ETH + GAS during the
+                        Pre-Public launch. During the Public Launch each CARGYZ
+                        minted will be .1 ETH + GAS.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -709,8 +713,9 @@ export default function Home() {
                   >
                     <div class="panel-body ">
                       <p>
-                        Whitelisted addresses can begin minting on 3.3.22 @ 11
-                        pm EST. Public minting will begin on 3.5.22 @ 11 pm EST.
+                        Pre-sale minting begins on 3.29.22 @ 11 pm EST (maximum
+                        of 2500 tokens to mint). Public minting will begin on
+                        3.31.22 @ 11 pm EST.
                       </p>
                     </div>
                   </div>
@@ -755,7 +760,7 @@ export default function Home() {
             <a href="https://twitter.com/MutantMetaverse">
               <i className=" px-1 Footer fab fa-twitter"></i>
             </a>
-            <a href="https://opensea.io/Mutantmetaverse">
+            <a href="https://opensea.io/collection/cargyz">
               <img src={os} className="px-1" style={{ width: "25px" }} />
             </a>
             <span className="px-1 Footer">
